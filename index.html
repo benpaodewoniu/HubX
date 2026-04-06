@@ -147,6 +147,7 @@
   <button class="filter-btn active" data-cat="all">全部</button>
   <button class="filter-btn" data-cat="ai">AI 工具</button>
   <button class="filter-btn" data-cat="design">设计资源</button>
+  <button class="filter-btn" data-cat="network">网络工具</button>
 </div>
 
 <div class="grid" id="app-grid"></div>
@@ -179,16 +180,30 @@ const sites = [
     desc: "在线图片处理工具，支持压缩、裁剪、转换等批量操作。",
     url: "https://www.iloveimg.com/zh-cn"
   },
+  {
+    name: "Scamalytics",
+    cat: "network",
+    desc: "IP 欺诈评分查询工具，检测 IP 地址的风险等级和代理状态。",
+    url: "https://scamalytics.com/"
+  },
+  {
+    name: "Ping0",
+    cat: "network",
+    desc: "IP 信息查询工具，提供 IP 归属地、风险检测等综合信息。",
+    url: "https://ping0.cc/"
+  },
 ];
 
 const catLabels = {
   ai: "AI 工具",
-  design: "设计资源"
+  design: "设计资源",
+  network: "网络工具"
 };
 
 const catColors = {
   ai: "#0071e3",
-  design: "#e3568b"
+  design: "#e3568b",
+  network: "#34c759"
 };
 
 const grid = document.getElementById("app-grid");
