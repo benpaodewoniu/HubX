@@ -148,6 +148,7 @@
   <button class="filter-btn" data-cat="ai">AI 工具</button>
   <button class="filter-btn" data-cat="design">设计资源</button>
   <button class="filter-btn" data-cat="network">网络工具</button>
+  <button class="filter-btn" data-cat="tool">实用工具</button>
 </div>
 
 <div class="grid" id="app-grid"></div>
@@ -192,18 +193,32 @@ const sites = [
     desc: "IP 信息查询工具，提供 IP 归属地、风险检测等综合信息。",
     url: "https://ping0.cc/"
   },
+  {
+    name: "AppStorePrice",
+    cat: "tool",
+    desc: "App Store 价格追踪工具，查看应用历史价格和降价信息。",
+    url: "https://appstoreprice.org/"
+  },
+  {
+    name: "AccountBoy",
+    cat: "tool",
+    desc: "在线账号购买平台，提供各类平台账号购买服务。",
+    url: "https://accboyytbjdlj.accountboy.com/"
+  },
 ];
 
 const catLabels = {
   ai: "AI 工具",
   design: "设计资源",
-  network: "网络工具"
+  network: "网络工具",
+  tool: "实用工具"
 };
 
 const catColors = {
   ai: "#0071e3",
   design: "#e3568b",
-  network: "#34c759"
+  network: "#34c759",
+  tool: "#ff9500"
 };
 
 const grid = document.getElementById("app-grid");
